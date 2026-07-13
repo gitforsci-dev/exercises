@@ -2,15 +2,12 @@
 title: "Match the Git command to the GUI action"
 subtitle: "A live matching activity for the Git for Science workshop"
 format:
-  pdf:
+  typst:
     papersize: a4
-    geometry:
-      - margin=2cm
+    margin:
+      x: 2cm
+      y: 2cm
     fontsize: 11pt
-    include-in-header:
-      text: |
-        \usepackage{array}
-        \renewcommand{\arraystretch}{1.6}
 ---
 
 ## How this works
@@ -29,47 +26,38 @@ numbered. The right column describes GUI actions, lettered and out of order.
 Draw a line from each command to its matching action, or write the letter next
 to the number. Then we compare answers as a group.
 
-\vspace{0.5cm}
-
 ## Learner sheet
 
-\begin{center}
-\begin{tabular}{|>{\raggedright\arraybackslash}p{6.5cm}|>{\raggedright\arraybackslash}p{9.5cm}|}
-\hline
-\textbf{Git command} & \textbf{GUI action (out of order)} \\
-\hline
-1. \texttt{git clone <url>} & A. Click the \textbf{down-arrow} (pull) button in the RStudio Git pane \\
-\hline
-2. \texttt{git add <file>} / stage & B. Write a commit message, then click \textbf{Commit} \\
-\hline
-3. \texttt{git commit -m "..."} & C. On GitHub, click \textbf{Add file > Create new file} or \textbf{Upload files}, then \textbf{Commit changes} \\
-\hline
-4. \texttt{git push} & D. Copy the HTTPS URL, then \textbf{File > New Project > Version Control > Git} in RStudio \\
-\hline
-5. \texttt{git pull} & E. Click the \textbf{up-arrow} (push) button in the RStudio Git pane \\
-\hline
-6. \texttt{git status} & F. Tick the \textbf{checkbox} next to a file in the RStudio Git pane \\
-\hline
-7. \texttt{git log} & G. On GitHub, open the \textbf{Pull requests} tab and click \textbf{New pull request} \\
-\hline
-8. \texttt{git branch <name>} / checkout & H. Read the file list and status flags shown in the RStudio Git pane \\
-\hline
-9. \texttt{git add} + \texttt{git commit} (on GitHub) & I. Click the \textbf{branch dropdown} in the Git pane and choose \textbf{New Branch} \\
-\hline
-10. open a pull request & J. Click \textbf{History} (the clock icon) in the RStudio Git pane \\
-\hline
-\end{tabular}
-\end{center}
+```{=typst}
+#table(
+  columns: (6.5cm, 1fr),
+  inset: 8pt,
+  align: (left + horizon, left + horizon),
+  stroke: 0.5pt,
+  table.header(
+    [*Git command*], [*GUI action (out of order)*],
+  ),
+  [1. `git clone <url>`], [A. Click the *down-arrow* (pull) button in the RStudio Git pane],
+  [2. `git add <file>` / stage], [B. Write a commit message, then click *Commit*],
+  [3. `git commit -m "..."`], [C. On GitHub, click *Add file > Create new file* or *Upload files*, then *Commit changes*],
+  [4. `git push`], [D. Copy the HTTPS URL, then *File > New Project > Version Control > Git* in RStudio],
+  [5. `git pull`], [E. Click the *up-arrow* (push) button in the RStudio Git pane],
+  [6. `git status`], [F. Tick the *checkbox* next to a file in the RStudio Git pane],
+  [7. `git log`], [G. On GitHub, open the *Pull requests* tab and click *New pull request*],
+  [8. `git branch <name>` / checkout], [H. Read the file list and status flags shown in the RStudio Git pane],
+  [9. `git add` + `git commit` (on GitHub)], [I. Click the *branch dropdown* in the Git pane and choose *New Branch*],
+  [10. open a pull request], [J. Click *History* (the clock icon) in the RStudio Git pane],
+)
 
-\vspace{0.3cm}
+#v(0.4cm)
 
-Pairs: 1\rule{0.8cm}{0.4pt}\quad 2\rule{0.8cm}{0.4pt}\quad
-3\rule{0.8cm}{0.4pt}\quad 4\rule{0.8cm}{0.4pt}\quad
-5\rule{0.8cm}{0.4pt}\quad 6\rule{0.8cm}{0.4pt}\quad
-7\rule{0.8cm}{0.4pt}\quad 8\rule{0.8cm}{0.4pt}\quad
-9\rule{0.8cm}{0.4pt}\quad 10\rule{0.8cm}{0.4pt}
+#let blank = box(width: 0.9cm, stroke: (bottom: 0.4pt))
+Pairs:
+1 #blank #h(0.4cm) 2 #blank #h(0.4cm) 3 #blank #h(0.4cm) 4 #blank #h(0.4cm) 5 #blank #h(0.4cm)
+6 #blank #h(0.4cm) 7 #blank #h(0.4cm) 8 #blank #h(0.4cm) 9 #blank #h(0.4cm) 10 #blank
 
-\newpage
+#pagebreak()
+```
 
 ## Facilitator answer key
 
