@@ -22,7 +22,7 @@ those same commands.
 
 **The activity (10 minutes, in pairs):** draw a line from each Git command on
 the left to its matching GUI action on the right, then we compare as a group.
-One item on the left is a GitHub-side action, not a Git command; matching it is
+One item on the left is a GitHub feature, not a Git command; matching it is
 part of the point.
 
 ## Learner sheet
@@ -54,7 +54,7 @@ The dots mark where to start and end each line.
 #grid(
   columns: (1fr, 2.2cm, 1fr),   // left column | drawing gutter | right column
   align: top,
-  // --- left: Git commands (plus one GitHub-side action, item 11) ---
+  // --- left: Git commands (plus one GitHub feature, item 11) ---
   stack(spacing: 7pt,
     item([1. `git clone <url>`]),
     item([2. `git add <file>` / stage]),
@@ -66,7 +66,7 @@ The dots mark where to start and end each line.
     item([8. `git branch <name>` / checkout]),
     item([9. `git revert <commit>`]),
     item([10. `git add` + `git commit` (on GitHub)]),
-    item([11. open a pull request #text(size: 8pt)[(GitHub action, not a Git command)]]),
+    item([11. open a pull request #text(size: 8pt)[(GitHub feature, not a Git command)]]),
   ),
   // --- middle: empty space to draw lines across ---
   [],
@@ -105,7 +105,7 @@ Do not print this page for learners.
 | 8. `git branch` / checkout | **I** | Branch dropdown > New Branch |
 | 9. `git revert <commit>` | **J** | Right-click a commit in History > Revert |
 | 10. `git add` + `commit` on GitHub | **C** | Add file / Upload files, then Commit changes |
-| 11. open a pull request *(GitHub action)* | **G** | Pull requests tab > New pull request |
+| 11. open a pull request *(GitHub feature)* | **G** | Pull requests tab > New pull request |
 
 ### Talking points while reviewing
 
