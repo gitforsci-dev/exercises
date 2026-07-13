@@ -1,0 +1,103 @@
+---
+title: "Match the Git command to the GUI action"
+subtitle: "A live matching activity for the Git for Science workshop"
+format:
+  pdf:
+    papersize: a4
+    geometry:
+      - margin=2cm
+    fontsize: 11pt
+    include-in-header:
+      text: |
+        \usepackage{array}
+        \renewcommand{\arraystretch}{1.6}
+---
+
+## How this works
+
+In this workshop we drive Git through a graphical interface: buttons in the
+RStudio Git pane and on GitHub. Every one of those clicks runs a Git command
+underneath. Clicking the push button *is* `git push`.
+
+Seeing that equivalence matters. Using the interface is not "cheating", it is
+running the same commands a terminal user types. It is also the bridge to the
+agentic-coding follow-up, where an agent drives Git by naming these same
+commands.
+
+**The activity (10 minutes, in pairs):** the left column lists Git commands,
+numbered. The right column describes GUI actions, lettered and out of order.
+Draw a line from each command to its matching action, or write the letter next
+to the number. Then we compare answers as a group.
+
+\vspace{0.5cm}
+
+## Learner sheet
+
+\begin{center}
+\begin{tabular}{|>{\raggedright\arraybackslash}p{6.5cm}|>{\raggedright\arraybackslash}p{9.5cm}|}
+\hline
+\textbf{Git command} & \textbf{GUI action (out of order)} \\
+\hline
+1. \texttt{git clone <url>} & A. Click the \textbf{down-arrow} (pull) button in the RStudio Git pane \\
+\hline
+2. \texttt{git add <file>} / stage & B. Write a commit message, then click \textbf{Commit} \\
+\hline
+3. \texttt{git commit -m "..."} & C. On GitHub, click \textbf{Add file > Create new file} or \textbf{Upload files}, then \textbf{Commit changes} \\
+\hline
+4. \texttt{git push} & D. Copy the HTTPS URL, then \textbf{File > New Project > Version Control > Git} in RStudio \\
+\hline
+5. \texttt{git pull} & E. Click the \textbf{up-arrow} (push) button in the RStudio Git pane \\
+\hline
+6. \texttt{git status} & F. Tick the \textbf{checkbox} next to a file in the RStudio Git pane \\
+\hline
+7. \texttt{git log} & G. On GitHub, open the \textbf{Pull requests} tab and click \textbf{New pull request} \\
+\hline
+8. \texttt{git branch <name>} / checkout & H. Read the file list and status flags shown in the RStudio Git pane \\
+\hline
+9. \texttt{git add} + \texttt{git commit} (on GitHub) & I. Click the \textbf{branch dropdown} in the Git pane and choose \textbf{New Branch} \\
+\hline
+10. open a pull request & J. Click \textbf{History} (the clock icon) in the RStudio Git pane \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{0.3cm}
+
+Pairs: 1\rule{0.8cm}{0.4pt}\quad 2\rule{0.8cm}{0.4pt}\quad
+3\rule{0.8cm}{0.4pt}\quad 4\rule{0.8cm}{0.4pt}\quad
+5\rule{0.8cm}{0.4pt}\quad 6\rule{0.8cm}{0.4pt}\quad
+7\rule{0.8cm}{0.4pt}\quad 8\rule{0.8cm}{0.4pt}\quad
+9\rule{0.8cm}{0.4pt}\quad 10\rule{0.8cm}{0.4pt}
+
+\newpage
+
+## Facilitator answer key
+
+Do not print this page for learners.
+
+| Command | Answer | GUI action |
+| --- | :---: | --- |
+| 1. `git clone <url>` | **D** | File > New Project > Version Control > Git |
+| 2. `git add` / stage | **F** | Tick the checkbox next to a file in the Git pane |
+| 3. `git commit -m "..."` | **B** | Write a message, click Commit |
+| 4. `git push` | **E** | Up-arrow (push) button in the Git pane |
+| 5. `git pull` | **A** | Down-arrow (pull) button in the Git pane |
+| 6. `git status` | **H** | Read the file list and status flags in the Git pane |
+| 7. `git log` | **J** | History (clock icon) in the Git pane |
+| 8. `git branch` / checkout | **I** | Branch dropdown > New Branch |
+| 9. `git add` + `commit` on GitHub | **C** | Add file / Upload files, then Commit changes |
+| 10. open a pull request | **G** | Pull requests tab > New pull request |
+
+### Talking points while reviewing
+
+- Every button press ran a real command. Nothing was hidden or "easier"; it was
+  the same operation.
+- `git add` and `git commit` are two steps. In the RStudio pane you see this
+  clearly: tick the box (add), then Commit. On GitHub the web editor bundles
+  both into one "Commit changes" click.
+- A pull request is not a Git command in the same sense; it is a GitHub feature
+  built on top of branches you pushed. Good moment to name where Git ends and
+  GitHub begins.
+- Tie-in to the agentic follow-up: an agent driving Git speaks these same
+  command names. Knowing the mapping is what lets you read and check what the
+  agent does.
