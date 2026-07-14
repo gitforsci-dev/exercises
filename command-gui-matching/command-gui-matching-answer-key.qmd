@@ -11,9 +11,6 @@ format:
     mainfont: "Arial"
 ---
 
-Do not hand this sheet to learners. Print or open the learner sheet
-(`command-gui-matching.qmd`) for them.
-
 ## Answer key
 
 | Command | Answer | GUI action |
@@ -25,15 +22,13 @@ Do not hand this sheet to learners. Print or open the learner sheet
 | 5. `git pull` | **A** | Down-arrow (pull) button in the Git pane |
 | 6. `git status` | **H** | Read the file list and status flags in the Git pane |
 | 7. `git log` | **K** | History (clock icon) in the Git pane |
-| 8. `git branch` / checkout | **I** | Branch dropdown > New Branch |
+| 8. `git checkout -b <name>` | **I** | Branch dropdown > New Branch |
 | 9. `git revert <commit>` | **J** | Right-click a commit in History > Revert |
 | 10. `git add` + `commit` on GitHub | **C** | Add file / Upload files, then Commit changes |
 | 11. open a pull request *(GitHub feature)* | **G** | Pull requests tab > New pull request |
 
 ## Talking points while reviewing
 
-- Every button press ran a real command. Nothing was hidden or "easier"; it was
-  the same operation.
 - `git add` and `git commit` are two steps. In the RStudio pane you see this
   clearly: tick the box (add), then Commit. On GitHub the web editor bundles
   both into one "Commit changes" click.

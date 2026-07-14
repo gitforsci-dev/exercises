@@ -64,7 +64,7 @@ The dots mark where to start and end each line.
     item([5. `git pull`]),
     item([6. `git status`]),
     item([7. `git log`]),
-    item([8. `git branch <name>` / checkout]),
+    item([8. `git checkout -b <name>`]),
     item([9. `git revert <commit>`]),
     item([10. `git add` + `git commit` (on GitHub)]),
     item([11. open a pull request #text(size: 8pt)[(GitHub feature, not a Git command)]]),
